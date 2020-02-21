@@ -1,0 +1,14 @@
+*
+!*/
+!*.v
+!*.mif
+!*.bsf
+!*.cnx
+!*.cnxerr
+!*.qip
+!*.txt
+!*.qsf
+!*.qpf
+!*.do
+!README.md
+!.gitignore

@@ -1,0 +1,28 @@
+
+
+C:/Users/Noah/OneDrive/Documents/CSC258/Lab6/part2/vga_adapter/vga_pll.v
+
+Mar 15 09PM:01:07>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Noah/OneDrive/Documents/CSC258/Lab6/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/Noah/OneDrive/Documents/CSC258/Lab6/part2/vga_adapter/vga_pll.v
+
+Mar 15 09PM:02:00>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Noah/OneDrive/Documents/CSC258/Lab6/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+D:/csc258/Final_Project/vga_adapter/vga_pll.v
+
+Mar 23 06PM:23:58>: Error in CNX file format.
+
+Error messages are listed in file
+D:/csc258/Final_Project/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)

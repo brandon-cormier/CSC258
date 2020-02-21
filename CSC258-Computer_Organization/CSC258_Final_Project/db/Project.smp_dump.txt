@@ -1,0 +1,6 @@
+
+State Machine - |main|main_control:c0|current_state
+Name current_state.S_END_GAME current_state.S_WAITING_FOR_INPUT current_state.S_SCROLL 
+current_state.S_WAITING_FOR_INPUT 0 0 0 
+current_state.S_SCROLL 0 1 1 
+current_state.S_END_GAME 1 1 0 

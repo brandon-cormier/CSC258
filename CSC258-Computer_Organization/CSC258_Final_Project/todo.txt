@@ -1,0 +1,64 @@
+﻿TODO
+- Exclude coordinates of player from drawing and RAM writing.
+- Implement jumping animation.
+
+- Implement collisions -> end game.
+
+- Implement scoring system.
+	- First implement on HEX, then on VGA.
+
+----------------------------------------------
+
+States:
+	WAIT (on KEY[1] -> PLAY)
+	PLAY (FSM)
+		INITIALIZE -> READ_NEXT
+		READ_NEXT -> WRITE_HERE (show what is read)
+		WRITE_HERE -> NEXT_PIXEL
+		NEXT_PIXEL -> READ_NEXT
+	END -> On any key WAIT
+	
+	
+	
+	key_start = ~KEY[1]
+	
+	
+	
+	localparam [1:0]  O_S_WAIT = 2'd0,
+					  O_S_PLAY = 2'd1,
+				      O_S_END = 2'd2;
+					  
+	localparam [1:0]  I_S_INITIALIZE = 2'd0,
+					  I_S_READ_NEXT = 2'd1,
+				      I_S_WRITE_HERE = 2'd2,
+					  I_S_NEXT_PIXEL = 2'd3;
+					  
+					  
+					  
+					  
+					  
+// Iterate over different limits/areas depending on wait or play.					  
+
+
+					  
+/*
+	Scans down, when it reaches the bottom of the screen
+	it moves to the right.
+*/
+if(position_y < 7'd120) position_y <= position_y + 7'd1;
+else if(position_y == 7'd120) begin
+	if(position_x < 8'd160) begin
+		position_x <= position_x + 8'd1;
+		position_y <= 7'd0;
+	end else begin
+		position_x <= 8'd0;
+		position_y <= 7'd0;
+	end
+end
+
+// Pixel advancement contradicts buffer_write && s_scroll logic.
+				// We move the pixel DOWN, yet we are still reading from the previous pixel's RIGHT!!!!. We need an FSM with multiple states.
+				
+				// ALSO need init_s_scroll, to reset coordinates.
+				
+				// to sim RAM: vsim <options> -L altera_mf <yourdesign>
